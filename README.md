@@ -11,14 +11,16 @@
     <img align="center" alt="Html5" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/> 
 </div>
 
+#### No desenvolvimento de alguns deles, também foram utilizados algumas Bibliotecas, como: Slick e Font-Awesome.
+
 
 ### Como eu posso vê-los ?
 
-#### Vou deixar o link do meu portfólio👇
+#### Vou deixar o link do meu portfólio. Lá, além de me conhecer um pouco melhor você vai conseguir ver os projetos  : ) 
 
-link: https://github.com/Guizzinho
+#### link: https://github.com/Guizzinho
 
-Lá, além de me conhecer um pouco melhor você vai conseguir ver os projetos  : ) 
+
 
 
 
