@@ -1,0 +1,718 @@
+
+/* Pré-estilos */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+        /* Estilo do site */
+
+    /* Section home */
+
+/* Primeira parte da section */
+
+section.home{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("../imagens/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding-top: 30px;
+}
+
+header .width{
+    width: 35%;
+}
+
+header .logo{
+    width: 132px;
+    height: 20px;
+    background-image: url("../imagens/logo.png");
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .nav-mobile{
+    display: none;
+}
+
+header .nav-desk{ 
+    width: 65%;
+    text-align: right;
+}
+
+.nav-desk nav{ 
+    width: 100%; 
+}
+
+.nav-desk ul{ 
+    list-style-type: none;
+}
+
+.nav-desk li{
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav-desk li.btn-nav{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 6px 15px;
+    text-transform: uppercase;
+}
+
+.nav-desk a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    font-weight: lighter;
+}
+
+/* Segunda parte da section */
+
+section .content-home{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.content-home h2{
+    font-size: 47px;
+    color: white;
+    font-weight: normal;
+}
+
+.content-home p{
+    font-size: 20px;
+    color: whitesmoke;
+    margin-top: 20px;
+    font-weight: light;
+    line-height: 32px;
+}
+
+.form-home{
+    margin-top: 20px;
+}
+
+.form-home input[type=email]{
+    width: 237px;
+    height: 43px;
+    background-color: white;
+    padding-left: 24px;
+    border: 1px solid #ccc;
+    border-radius: 100px;
+    outline: none;
+}
+
+.form-home input[type=email]:focus{
+    outline: none;
+}
+
+.form-home input[type=email]::placeholder{
+    font-size: 14px;
+    color: rgb(177, 177, 177);
+}
+
+.form-home input[type=submit]{
+    width: 181px;
+    height: 43px;
+    background-color: #ff5f27;
+    border: 0;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+    /* Section sobre */
+
+/* Primeira parte */
+
+section.sobre{
+    width: 100%;
+    margin-top: 80px;
+}
+
+section .container > p{
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: center;
+    color: #31475e;
+    padding: 0 2%;
+}
+
+/* Segunda porte */
+
+section.sobre .flex{
+    margin-top: 90px;
+    flex-wrap: wrap;
+    padding: 0 2%;
+}
+
+section.sobre .descricao{
+    width: 51%;
+    padding-right: 13px;  
+}
+
+.descricao h2{
+    font-size: 22px;
+    line-height: 32px;
+    color: #31475e;
+    font-weight: normal;
+    /* margin-top: -30px; */
+}
+
+.descricao p{
+    margin-top: 20px;
+    color: #6a7c92;
+    line-height: 27px;
+    font-size: 15px;
+}
+
+
+section.sobre .img-1{
+    width: 49%;
+    max-width: 500px; 
+    
+}
+
+/* Terceira parte */
+
+section.sobre .bg{
+    width: 100%;
+    max-width: 960px;
+    min-height: 340px;
+    background-image: url("../imagens/bg2.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.bg .little-box{
+    width: 100%;
+    max-width: 506px;
+    min-height: 250px;
+    background-color: white;
+    position: absolute;
+    bottom: -24%;
+    left: 40%;
+    z-index: 2;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    padding: 5%;
+}
+
+.little-box p{
+    font-size: 18px;
+    color: #31475e;
+    padding-bottom: 30px;
+    font-weight: lighter;
+}
+
+.little-box span{
+    font-size: 18px;
+    color: #31475e;
+}
+
+/* Section sevicos */
+
+section.servicos{
+    width: 100%;min-height: 500px;
+    margin-top: 150px;
+}
+
+section.servicos > .container > h2{
+    text-align: center;
+    font-size: 22px;
+    color: #31475e;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+section.servicos > .container > h2 > i{
+    margin-top: 10px;
+    font-size: 22px;
+    color: #31475e; 
+}
+
+.servicos .box-single{
+    width: 31%;
+    margin: 20px 10px;
+    background-color: white;
+    box-shadow: 0 8px 20px 0 rgba(224, 224, 224, 0.5);
+    border-radius: 3px;
+    min-height: 410px;
+    position: relative;
+}
+
+.box-single img{
+    width: 100%;
+}
+
+.box-single h2{
+    font-size: 20px;
+    color: #31475e;
+    font-weight: normal;
+    padding: 20px 20px 10px 20px;
+}
+
+.box-single p{
+    font-size: 15px;
+    color: #6a7c92;
+    line-height: 1.6;
+    font-weight: lighter;
+    padding: 7px 20px;
+}
+
+.box-single a{
+    font-size: 16px;
+    display: inline-block;
+    color: #6a7c92;
+    text-decoration: none;
+    border: 1px solid #6a7c92;
+    padding: 12px 20px;
+    border-radius: 30px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 30px;   
+}
+
+
+/* Section parcerias */
+
+section.parcerias{
+    width: 100%;
+    margin-top: 60px;
+}
+
+section.parcerias .container{
+    background-color: #f7f7f7;
+    min-height: 360px;
+}
+
+.parcerias h2{
+    margin: 0 auto;
+    text-align: center;
+    color: #31475e;
+    font-weight: normal;
+    font-size: 22px;
+    padding-top: 60px;
+}
+
+.parcerias .empresas{
+    display: flex;
+    margin-top: 70px;
+}
+
+.empresas .empresa-single{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: #ececec;
+    border-width: 1px 0 1px 1px;
+    padding: 30px;
+}
+
+.empresa-single:first-of-type{
+    border-left-width: 0;
+}
+
+/* Section contato */
+
+section.contato{
+    width: 100%;
+    margin-top: 80px;
+}
+
+section.contato .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato h2{
+    font-size: 22px;
+    color: #31475e;
+    font-weight: normal;
+}
+
+.contato .form-contato{
+    width: 100%;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contato .input-single{
+    width: 100%;
+    max-width: 660px;
+    display: inline-block;
+    padding-top: 20px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.input-single label{
+    font-size: 15px;
+    color: #6a7c92;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 30px;
+    text-align: right;
+    display: inline-block;
+}
+
+.input-single input{
+    width: 100%;
+    max-width: 400px;
+    height: 52px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #ebebeb;
+    line-height: 52px;
+    padding-left: 15px;
+}
+
+.input-single:last-of-type{
+    display: flex;
+    align-items: baseline;
+}
+
+.input-single textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    resize: none;
+}
+
+.contato input[type=submit]{
+    width: 179px;
+    height: 58px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 100px;
+    background-color: #ff5f27;
+    box-shadow: 0 8px 20px 0 rgba(224,224,224,0.5);
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    margin-top: 150px;
+}
+
+footer > .container{
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+    display: flex;
+    padding: 30px;
+}
+
+footer .groups{
+    width: 33.3%;
+}
+
+.groups h2{
+    font-size: 22px;
+    color: #6a7c92;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.groups p{
+    font-size: 16px;
+    color: #6a7c92;
+    padding: 10px;
+}
+
+.groups input{
+    width: 80%;
+    padding-left: 10px;
+    max-width: 208px;
+    height: 43px;
+    border-radius: 100px;
+    border: 1px solid #bfbfbf;
+    margin-left: 10px; 
+    outline: none; 
+}
+
+.groups input::placeholder{color: #bfbfbf;}
+
+.groups button{
+    width: calc(20% - 10px);
+    margin-left: 10px;
+    max-width: 63px;
+    height: 43px;
+    border-radius: 50px;
+    border: 1px solid #6a7c92;
+    color: #6a7c92;
+    cursor: pointer;
+    background-color: white;
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.icons a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color: #bfbfbf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Meida Querys */
+
+@media screen and (max-width: 630px){
+
+    .form-home input[type=submit]{
+        margin: 12px;
+    }
+
+    /*  */
+
+    section.sobre .img-1 img{
+        width: 100%; 
+    }
+
+    /*  */
+
+    .bg .little-box{
+        width: 70%;
+    }
+
+    .little-box p, .little-box span{
+        font-size: 16px;
+    }
+
+    /*  */
+
+    .contato .input-single{
+        width: 100%;
+        max-width: 660px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .input-single label{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 920px){
+    .nav-desk{
+        display: none;
+    }
+
+    header .nav-mobile{
+        display: inline-block;
+        width: 50%;
+        text-align: right;
+    }
+
+    .nav-mobile > i{
+        font-size: 27px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .nav-mobile nav{
+        width: 100%;
+        max-height: 400px;
+        background-color: #31475e;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    .nav-mobile ul{
+        list-style-type: none;
+        padding: 110px 6% 50px 6%;
+        width: 100%;
+    }
+
+    .nav-mobile li{
+        padding: 12px 20px;
+        text-align: left;
+    }
+
+    .nav-mobile li.btn-nav a{
+        display: inline-block;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 6px 15px;
+        text-transform: uppercase;
+    }
+
+    .nav-mobile a{
+        text-decoration: none;
+        color: whitesmoke;
+        font-weight: light;
+        font-size: 15px;
+        opacity: 0.8;
+    }
+
+    /*  */
+
+    .servicos .box-single{
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /*  */
+
+    .parcerias .empresas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .empresas .empresa-single{
+        width: 100%;
+        max-width: 400px;
+        border-width: 1px 0 1px 0;
+    }
+
+    /*  */
+
+    footer > .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .groups{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        
+    }
+
+    .groups button{
+        margin-top: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px){
+    section .content-home{
+        padding: 0 2%;
+    }
+
+    /*  */
+
+    section.sobre .descricao{
+        width: 100%;
+        max-width: 500px;
+        padding-right: 0; 
+        text-align: left; 
+        display: inline-block;
+    }
+
+    section.sobre .img-1{
+        width: 100%;
+        margin-top: 30px;
+        padding: 0 2%;
+    }
+
+    /*  */
+
+    section.sobre .bg{
+        width: 100%;
+        max-width: 1000px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.sobre .container:nth-of-type(2){
+        padding: 0;
+    }
+
+    .bg .little-box{
+        position: static;
+        bottom: 0;
+        left: 0;
+        z-index: 1; 
+    }
+    
+
+    
+}

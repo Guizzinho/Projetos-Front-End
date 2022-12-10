@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="css/panel.ico">
+    <link rel="stylesheet" href="Plugins/font-awesome/fontawesome-free-6.2.0-web/css/all.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/function.js"></script>
+    <title>Dashboard</title>
+</head>
+    <body>
+        <div class="sidebar"><!--div onde vai ter tudo da sidebar-->
+            <div class="side-top"><!--top com a logo da empresa-->
+                <h2>Danki</h2>
+            </div><!--side-top-->
+            <div class="container">
+                    <nav class="side-menu"><!--todos os menus-->
+                        <ul>
+                            <li><i class="fa-solid fa-clipboard-list"></i><a href="">Painel</a></li>
+                            <li><i class="fa-solid fa-window-restore"></i><a href="">Conteúdo</a></li>
+                            <li><i class="fa-solid fa-chart-line"></i><a href="">Estatísticas</a></li>
+                            <li><i class="fa-solid fa-gear"></i><a href="">Configurações</a></li>
+                            <li><i class="fa-solid fa-question"></i><a href="">Dúvidas</a></li>
+                            <li><i class="fa-solid fa-user"></i><a href="">Usuários</a></li>
+                            
+                        </ul>
+                    </nav><!--side-menu-->
+                    <div class="side-end"><!--link de desconectar-->
+                        <i class="fa-solid fa-right-from-bracket"></i><a href="">Desconectar</a>
+                    </div><!--side-end-->
+                </div><!--container-->
+        </div><!--sidebar-->
+        
+        <header>
+            <div class="container">
+                <i id="bars" class="fa-solid fa-bars"></i><!--icone para ocultar a side no mobile-->
+
+                <div class="colaboradores">
+                        <a href="#">Colecionadores.com.br</a>
+                        <div class="ln"></div>
+                        <a href="#">Gui@Colecionadores.com.br</a>
+                </div><!--colaboradores-->
+
+                    <div class="icones">
+                        <i id="sino" class="fa-regular fa-bell"></i>
+                            <div class="notificacao">
+
+                                <div class="cima">
+                                    <h2>Notificações</h2>
+                                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                                </div><!--cima-->
+                                
+                                <div class="conteudo-not"><h2>A caixa de mensagens está vazia!</h2></div>
+                            </div><!--notificação-->
+                        
+                        <i id="lupa" class="fa-solid fa-magnifying-glass"></i>
+                        <input class="pesquisa" type="text"> 
+                    </div><!--icones-->
+            </div><!--container-->
+        </header>
+
+        <section class="content-main">
+            <div class="container">
+                <div class="box boas-vindas  w100">
+                    <h2>Olá Guilherme, Seja bem vindo!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id laoreet sem. Maecenas eleifend magna nec orci mollis molestie. Duis fermentum nisl sapien, vitae fringilla arcu rutrum vitae arcu rutrum vitae arcu rutrum vitae arcu.</p>
+                </div><!--box boas-vindas-->
+                <div class="box acoes w100">
+                    <h2>O que você gostaria de fazer?</h2>
+                    <div class="options">
+                        <a href="#">Alterar o conteúdo de uma página</a>
+                        <a href="#">Descobrir quantas pessoas acessaram meu site</a>
+                        <a href="#">Solicitar uma alteração no código</a>
+                        <a href="#">Permitir que outra pessoa acesse e edite o site</a>
+                        <a href="#">Alterar meu cadastro</a>
+                        <a href="#">Escrever um artigo para o blog</a>
+                        <a href="#">Visualizar meu site</a>
+                    </div><!--options-->
+                </div><!--box acoes-->
+
+                <div class="box anotacao w50">
+                    <h2>Deixe uma anotação.</h2>
+                    <i class="fa-solid fa-circle-question">
+                        <div class="interrogacao"><p>Escreva uma breve mensagem que será enviada para a pessoa selecionada.</p>
+                        </div><!--interrogacao-->
+                    </i>
+                    <div class="form">
+                        <form id="form-1">
+                            <input type="text" name="titulo" placeholder="Título">
+                            <input type="text" name="pessoa" placeholder="Para quem ?">
+                            <textarea name="mensagem" placeholder="O que você gostaria de anotar?"></textarea>
+                            <button type="submit" value="acao" form="form-1">Enviar!</button>
+                        </form>
+                    </div><!--form-->
+                </div><!--box anotacao-->
+
+                <div class="box ticket w50">
+                    <h2>Abra um Ticket.</h2>
+                    <i class="fa-solid fa-circle-question">
+                        <div class="interrogacao"><p>Entre em contato com o suporte caso não tenha conseguido resolver seu problema.</p>
+                        </div><!--interrogacao-->
+                    </i>
+                    <p class="texto">Não encontrou uma solução na página de 
+                        <a href="#">Perguntas Frequentes?</a>
+                    </p>
+                    <button value="acao">Solicite o Suporte</button>
+                </div><!--box ticket-->
+
+                <div class="box cadastro w50">
+                    <h2>Altere seu Cadastro.</h2>
+                    <i class="fa-solid fa-circle-question">
+                        <div class="interrogacao"><p>Coloque um novo E-mail e uma nova senha para acessar o Dashboard.</p>
+                        </div><!--interrogacao-->
+                    </i>
+                    <div class="form">
+                        <form id="form-1">
+                            <input type="email" name="email" placeholder="Novo e-mail">
+                            <input type="text" name="pessoa" placeholder="Nova senha">
+                            <button type="submit" value="acao" form="form-1">Redefinir!</button>
+                        </form>
+                    </div><!--form-->
+                </div><!--cadastro-->
+                <div class="clear"></div>
+
+            </div><!--container-->
+        </section><!--content-main-->
+
+        <section class="atualizacao">
+            <div class="topo">
+                <h2>Últimas Atualizações</h2>
+            </div><!--topo-->
+
+            <div class="container">
+                <div style="margin-top: 0;" class="content-2"><!-- 1° -->
+                    <div class="guia">
+                        <div class="circle"></div>
+                        <div class="linha"></div>
+                    </div><!--guia-->
+
+                    <div class="info">
+                        <h2>Há 3 minutos</h2>
+                        <h3>Nova Página Inserida</h3>
+                        <p>A página <a href="#">Sobre</a> foi inserida por Desenvolvedor.</p>
+                    </div><!--info-->
+                </div><!--content-2-->
+
+
+                <div class="content-2"><!-- 2° -->
+                    <div class="guia">
+                        <div class="circle"></div>
+                        <div class="linha"></div>
+                    </div><!--guia-->
+
+                    <div class="info">
+                        <h2>Hoje - 8H30</h2>
+                        <h3>Uma página foi editada</h3>
+                        <p>A página <a href="#">Contato</a> foi editada por Guilherme.</p>
+                    </div><!--info-->
+                </div><!--content-2-->
+
+
+                <div class="content-2"><!-- 3° -->
+                    <div class="guia">
+                        <div class="circle"></div>
+                        <div class="linha"></div>
+                    </div><!--guia-->
+
+                    <div class="info">
+                        <h2>Ontem - 22H45</h2>
+                        <h3>Uma categoria foi criada</h3>
+                        <p>A categoria <a href="#">Relíquias</a> foi criada na página Sobre por Guilherme.</p>
+                    </div><!--info-->
+                </div><!--content-2-->
+
+                <div class="content-2"><!-- 4° -->
+                    <div class="guia">
+                        <div class="circle"></div>
+                        <div class="linha"></div>
+                    </div><!--guia-->
+
+                    <div class="info">
+                        <h2>26 de Abril - 15H30</h2>
+                        <h3>O painel foi atualizado</h3>
+                        <p>Seu painel foi atualizado para a versão 1.2.5. <a href="#">Veja as novidades.</a></p>
+                    </div><!--info-->
+                </div><!--content-2-->
+
+                <div class="content-2"><!-- 4° -->
+                    <div class="guia">
+                        <div class="circle"></div>
+                        <div class="linha"></div>
+                    </div><!--guia-->
+
+                    <div class="info">
+                        <h2>22 de Abril - 11H00</h2>
+                        <h3>Mensagem do suporte</h3>
+                        <p>Sua pergunta foi respondida pelo nosso suporte, confira em <a href="#">Dúvidas.</a></p>
+                    </div><!--info-->
+                </div><!--content-2-->
+
+            </div><!--container-->
+        </section><!--atualizacao-->
+
+        <div class="swipe"></div><!--div para indentificar a section no mobile-->
+
+        
+        <!-- div clear tem que ser a ultima para nao dar conflito -->
+        <div class="clear"></div>
+    </body>
+</html>

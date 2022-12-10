@@ -1,0 +1,587 @@
+/* Resets do site */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    background-color:rgb(240, 240, 240)
+}
+
+/*  */
+
+    /* Mini frameworks */
+
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear
+{ clear: both; }
+
+.float-left
+{ float: left; }
+
+
+.float-right
+{ float: right; }
+
+.titulo{
+    font-size: 37px;
+    line-height: 49px;
+    margin-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(16, 124, 16);
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 10px;
+    vertical-align: top;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*  */
+
+    /* Init header */
+    
+header
+{ padding-top: 25px; }
+
+.logo img
+{ max-width: 100%;}
+
+header .menu
+{ margin-top: 15px; }
+
+.menu a{
+    color: black;
+    font-size: 14px;
+    margin-right: 65px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu a:nth-child(2)
+{ margin-right: 30px;}
+
+.menu a.btn-down{
+    text-align: center;
+    color: white;
+    padding: 15px 63px;
+    background-color: #30851d;
+    box-shadow: 0 10px 40px 0 rgba(43, 178, 34, 0.5);
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/*  */
+
+    /* Init content */
+
+div.main-content
+{ margin-top: 80px; }
+
+.main-content .text{ 
+    margin-top: 40px; 
+    width: 52%; 
+}
+
+.text p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.text a
+{ margin-right: 10px; }
+
+.main-content .img-content{
+    width: 43%;
+}
+
+.img-content img
+{ max-width: 100%; }
+
+.comment{
+    margin-top: 60px;
+    width: 48.5%;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.comment:first-of-type{ margin-right: 1.5%; }
+
+.comment .flex-comment{
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-comment p{ 
+    width: 85%; 
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    padding-right: 10px;
+}
+
+.flex-comment .quote{ 
+    width: 15%;
+}
+
+.quote img{ 
+    max-width: 100%; 
+    background-color: white;
+}
+
+.flex-comment span{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgb(85, 193, 78);
+    font-weight: bold;
+}
+
+/*  */
+
+    /* Section sobre */
+
+.sobre .titulo{
+    font-size: 28px;
+}
+
+.ln{
+    width: 100px;
+    height: 2px;
+    background-color: #2bb222;
+    box-shadow: 1px 1px 1px rgba(168, 168, 168, 0.7);
+    margin-top: -10px;
+}
+
+.sobre .box-sobre{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.sobre .box-single
+{ width: 32%; min-height: 200px; height: auto; margin-right: 20px; }
+
+.sobre .box-single:nth-of-type(3)
+{ margin-right: 0; width: 41%}
+
+.box-single .topo
+{ width: 100%; height: 120px; }
+
+.topo .banner{
+    width: 35%;
+    height: 100%;
+    background-color: #2bb222;
+}
+
+#third-1
+{ width: 28%; }
+
+#third-2
+{ width: 72%; }
+
+.banner svg{
+    color: white;
+    font-size: 35px;
+}
+
+.topo .destaques{
+    width: 65%;
+    line-height: 30px;
+    height: 100%;
+    background-color: rgba(239, 254, 238, 1);
+}
+
+.destaques p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.box-single .conteudo{
+    width: 100%;
+    padding: 40px;
+    text-align: left;
+    background-color: white;
+    
+}
+
+.conteudo p{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.img-sobre{
+    width: 100%;
+    margin: 60px 0;
+    display: inline-block;
+}
+
+.img-sobre .city{
+    width: 60.5%;
+    min-height: 520px;
+    margin-right: 20px;
+    background-image: url('../imgs/city.png');
+}
+
+.img-sobre .person{
+    width: 37.5%;
+    height: 100%;
+    min-height: 250px;
+    margin-bottom: 20px;
+    background-image: url('../imgs/personagens.jpg');
+}
+
+.img-sobre .game{
+    width: 37.5%; 
+    height: 100%;
+    min-height: 250px;
+    background-image: url('../imgs/gameplay.jpg');
+}
+
+/*  */
+
+    /* Section platform */
+
+section.platform{
+    width: 100%;
+    background-color: rgb(16, 124, 16);
+    height: auto;
+    min-height: 400px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.platform .flex
+{ justify-content: flex-start; }
+
+.platform .info-plat{
+    margin-top: 60px;
+    width: 70%;
+}
+
+.info-plat h2{
+    font-size: 27px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.info-plat .ln{
+    background-color: white;
+    width: 80px;
+    margin-left: 4px;
+}
+
+.info-plat p{
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0 40px 0;
+}
+
+.info-plat .ps
+{ background-image: url('../imgs/Ps_store_logo.png'); margin-bottom: 20px; }
+
+.info-plat .steam
+{ background-image: url('../imgs/steam.png'); background-size: 75%; }
+
+.info-plat .xbox
+{ background-image: url('../imgs/xbox.png'); }
+
+.platform .logo-plat{
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 60px;
+    height: 180px;
+    background-image: url('../imgs/logo-2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/*  */
+
+    /* Footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(239, 254, 238, 1);
+    padding: 30px;
+}
+
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer a{
+    font-size: 24px;
+    color: rgb(92, 92, 92);
+    margin-left: 10px;
+}
+
+footer p{
+    font-size: 12px;
+    color: #40c537;
+    font-weight: bold;
+}
+
+.direitos svg{
+    color: red;
+    font-size: 12px;
+    margin: 0;
+}
+
+/*  */
+
+    /* Media Querys */
+
+@media screen and (max-width: 1120px){
+
+    .sobre .box-sobre{
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sobre .box-single
+    { width: 80%; min-height: 200px; height: auto; margin: 30px auto; }
+
+    .sobre .box-single:nth-of-type(3)
+    { margin: 30px auto; width: 80%}
+
+    .box-single .topo
+    { width: 100%; min-height: 120px; }
+
+    .topo .banner{
+        width: 20%;
+        height: 100%;
+        background-color: #2bb222;
+    }
+
+    #third-1
+    { width: 20%; }
+
+    #third-2
+    { width: 80%; }
+
+    .banner svg{
+        color: white;
+        font-size: 35px;
+    }
+
+    .topo .destaques{
+        width: 80%;
+        line-height: 30px;
+        height: 100%;
+        justify-content: flex-start;
+        padding-left: 20px;
+        background-color: rgba(239, 254, 238, 1);
+    }
+
+    .img-sobre .float-left, .img-sobre .float-right
+    { float: none; }
+
+    .img-sobre{
+        width: 100%;
+        margin: 60px 0;
+        display: inline-block;
+    }
+
+    .img-sobre .city{
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+        min-height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .img-sobre .person{
+        width: 70%;
+        margin: 0 auto;
+        height: 100%;
+        min-height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .img-sobre .game{
+        width: 70%; 
+        margin: 0 auto;
+        height: 100%;
+        min-height: 300px;
+    }
+
+}
+
+
+@media screen and (max-width: 900px){
+
+    .menu a{
+        margin-right: 15px;
+    }
+
+    .menu a:nth-child(2)
+    { margin-right: 15px;}
+
+    .menu a.btn-down{
+        padding: 15px;
+    }
+
+    .container{ padding: 0 10%;}
+
+    .sobre .titulo{
+        margin-top: 70px;
+    }
+
+    .main-content .float-left, .main-content .float-right
+    { float: none; }
+
+    .main-content .text{ 
+        width: 100%;
+        max-width: 800px;
+        padding: 0 2%;
+        margin: 0 auto;
+    }
+
+    .main-content .img-content{ 
+        width: calc(100% + 26.5%);
+        height: 400px;
+        position: relative;
+        z-index: 1;
+        margin: 0 -14%;
+        margin-top: 60px;
+    }
+
+    .img-content img{
+        width: 900px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .comment{
+        width: 100%;
+        display: block;
+        margin: 30px auto;
+        position: relative;
+        z-index: 2;
+    }
+
+    #comment-one{
+        margin-top: -25px;
+    }
+
+    .sobre .box-single
+        { width: 100%; min-height: 200px; height: auto; margin: 30px auto; }
+
+    .sobre .box-single:nth-of-type(3)
+        { margin: 30px auto; width: 100%}
+
+    .box-single .topo
+        { width: 100%; height: 120px; }        
+
+        .img-sobre .city{
+            width: 100%;
+        }
+    
+        .img-sobre .person{
+            width: 100%;
+        }
+    
+        .img-sobre .game{
+            width: 100%; 
+        }
+
+        .platform .flex{
+            display: inline-block;
+        }
+
+        .platform .info-plat{
+            margin-top: 60px;
+            width: 100%;
+        }
+
+        .platform .logo-plat{
+            display: none; 
+        }
+
+        .info-plat img{
+            margin-bottom: 20px;
+        }
+}
+
+@media screen and (max-width: 768px){
+
+    header .float-left, header .float-right{
+        float: none;
+    }
+
+    header .menu{
+        margin-top: 40px;
+        text-align: left;
+    }
+
+    header .logo, header .menu{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    footer .flex{
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    footer .container div{
+        margin-bottom: 20px;    
+    }
+}
+
+@media screen and (max-width: 500px){
+    .menu a.btn-down{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .banner svg{
+        color: white;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,1031 @@
+
+/* Estilo básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Mini-frameWork */
+
+.clear{clear: both;}
+
+.container{
+    width: 100%;
+    max-width: 970px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.selected{
+    color: #509d87;
+    position: relative;
+}
+
+
+            /* Estilo do site */
+
+        /* Sessão home */
+
+/* Header */
+
+section.home{
+    width: 100%;
+    min-height: 600px;
+    padding: 50px 0;
+    background-image: url('../imagens/bg_01.png');
+    background-size: cover;
+}
+
+header{
+    border-bottom: 3px solid rgba(71, 83, 88, 0.11);
+    padding-bottom: 5px;
+}
+
+header .logo{
+    width: 166px;
+    height: 64px;
+    float: left;
+    background-image: url('../imagens/logo.png');
+    background-size: 100% 100%;
+    position: relative;
+    top: -20px;
+}
+
+header nav.desktop{
+    float: left;
+    margin: 0 50px;
+}
+
+header nav.desktop ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    color: white;
+    padding: 0 8px;
+}
+
+header .selected span{
+    width: 20px;
+    height: 2px;
+    background: #509d87;
+    position: absolute;
+    bottom: 0;
+}
+
+header nav a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.mobile{display: none;}
+
+header .telefone-header span{
+    font-size: 17px;
+    color: white;
+    position: relative;
+    top: -7px;
+}
+
+    /* Conteúdo da home */
+
+/* Primeira parte do content */
+
+.content-home{
+    width: 100%;
+    min-height: 500px;
+}
+
+.content-home > .container{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.description{
+    width: 54%;
+    padding: 90px 2%;
+}
+
+.description h2{
+    color: #509d87;
+    font-size: 35px;
+    font-weight: normal;
+    max-width: 470px;
+    text-align: left;
+}
+
+.description h2 span{color: #528677;}
+
+.description p{
+    font-size: 15px;
+    color: #509d87;
+    padding: 25px 0;
+    max-width: 420px;
+    text-align: left;
+}
+
+.description p span{color: #518d7d; font-weight: bolder}
+
+.description form input[type=email]{
+    display: inline-block;
+    width: 211px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 40px;
+    padding: 20px; 
+}
+
+.description form input[type=email]::placeholder{color: #ccc;}
+.description form input[type=email]:focus{outline: none;}
+
+.description form input[type=submit]{
+    display: inline-block;
+    width: 221px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    margin-left: 5px;
+    background-color: #13bfb1;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.description .last{
+    display: inline-block;
+    font-size: 15px;
+    color: #509d87;
+    padding: 28px 0;
+}
+
+/* Segunda parte do content */
+
+.images-home{
+    width: 46%;
+    padding: 35px 0;
+}
+
+.images-home img{
+    max-width: 200px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    padding: 10px; 
+    
+}
+
+/* Section do good points*/
+
+section.good-points{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.good-points > .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.good-points .point-single{
+    width: 33.3%;
+    padding: 25px 1%;
+}
+
+.point-single img{
+   max-width: 100%;
+}
+
+.point-single h2{
+    font-size: 27px;
+    color: #2d2d2d;
+    font-weight: bold;
+    margin: 27px 0;
+}
+
+.point-single h2 > b{
+    color: #7dd5b0;
+    font-weight: bold;
+}
+
+.point-single p{
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+/* arrumando o alinhamento dos points.
+O tamanho das imagens são diferentes */
+
+.point-single:nth-child(3) h2,p {
+    position: relative;
+    top: -8px;
+}
+
+.point-single:nth-child(4){
+    position: relative;
+    top: 8px;
+}
+
+.point-single:nth-child(4) h2{
+    position: relative;
+    top: 4px;
+}
+
+    /* Section procedure */
+
+/* Primeira parte da section */
+
+section.procedure{
+    width: 100%;
+    min-height: 400px;
+    margin-top: 60px;
+    display: flex;
+}
+
+.procedure .image-procedure{
+    width: 650px;
+    height: 650px;
+    background-image: url("../imagens/rosto.png");
+    background-size: /*110% 70%*/ 810px;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 0 2%;
+}
+
+/* Segunda parte da section */
+
+.procedure .about-procedure{
+    width: 50%;
+    padding: 0 2%;
+}
+
+.about-procedure .adjust{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.about-procedure h2{
+    font-size: 25px;
+    color: #a9c4b8;
+    font-weight: lighter;
+    word-spacing: 5px;
+}
+
+.about-procedure h2 > b{
+    color: #03ca9f;
+}
+
+.about-procedure p{
+    font-size: 14px;
+    color: black;
+    padding: 30px 0 20px 0;
+    max-width: 350px;
+}
+
+
+/* Section invisalign */
+
+section.invisalign{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("../imagens/bg_02.png");
+    background-size: cover;
+    position: relative;
+    top: -287px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #2d2d2d;
+}
+
+section.invisalign h2{
+    font-size: 29px;
+    max-width: 600px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 0 2%;
+}
+
+section.invisalign p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+    /* Section works for you */
+
+/* Primeira parte da section */
+
+section.serves{
+    width: 100%;
+    min-height: 600px;
+    margin-top: -220px;
+}
+
+.serves h2{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+    color: #3b3e42;
+    font-weight: bold;
+}
+
+section.serves h2 > b{
+    color: #a9c4b8;
+}
+
+.works{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    /* flex-direction: column; */
+}
+
+.works .works-one{
+    width: 45%;
+    margin-top: 100px; 
+}
+
+
+
+/* block one */
+
+.block-one{
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-one img{
+    width: 50%;
+    padding: 0 2%;
+}
+
+.block-one p{
+    font-size: 12px;
+    color: #509d87;
+    padding: 0 10px;
+    text-align: left;
+}
+
+
+
+
+/* block two */
+
+.block-two{
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.block-two img{
+    width: 39%;
+    padding: 0 2%;
+}
+
+.block-two p{
+    font-size: 12px;
+    color: #ccc;
+    padding: 0 13px;
+    text-align: center;
+}
+
+
+
+
+/* block three */
+
+.block-three{
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.block-three img{
+    width: 31%;
+    padding: 0 2%;
+    margin-left: 40px;
+}
+
+.block-three p{
+    font-size: 12px;
+    color: #ccc;
+    padding: 0 13px;
+    text-align: left;
+}
+
+
+/* Segunda parte da section */
+
+.works .works-two{
+    width: 55%;
+    margin-top: 30px;
+}
+
+.works-two .single-work{
+    width: 100%;
+    padding: 23px 2%;
+    display: flex;
+    justify-content: flex-start; 
+}
+
+.single-work .circle{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: relative;
+}
+
+.single-work .circle span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    color: #13bfb1;
+}
+
+.line{
+    width: 2px;
+    height: 50px;
+    background-color: #ccc;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.info{
+    width: 100%;
+    max-width: 310px;
+    display: inline-block;
+    padding: 0 4%;
+}
+
+.info h2{
+    font-size: 14px;
+    color: #13bfb1;
+    text-align: left;
+}
+
+.info span{
+    display: none;
+    font-size: 14px;
+    color: #13bfb1;
+    text-align: left;
+}
+
+.info p{
+    font-size: 14px;
+    color: #2d2d2d;
+    text-align: left;
+    padding-top: 20px;
+}
+
+
+/* Section diferences */
+
+section.diferences{   
+    width: 100%;
+    max-width: 500px;
+    margin: 100px auto;
+}
+
+.diferences > h2{
+    font-size: 28px;
+    color: #2d2d2d;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: normal;
+    padding: 0 2%;
+}
+
+.diferences > h2 > b{
+    color: #2d2d2d;
+}
+
+.diferences > h2 > span{
+    color: #13bfb1;
+    font-weight: bold;
+}
+
+.diferences .flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Primeira parte da section */
+
+.diferences .traditional{
+    width: 50%;
+    padding: 15px 2%;
+    margin-top: 40px;
+    border-right: 2px solid #ccc;
+}
+
+.traditional > h2{
+    font-size: 26px;
+    font-weight: normal;
+    color: #a9c4b8;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.traditional-single{
+    padding: 10px 2%;
+    color: #a9c4b8;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.traditional-single .risk{
+    height: 2px;
+    background-color: #e89595;
+    opacity: 0.7;
+    position: relative;
+    top: -20px;
+    transform: rotate(-3deg);
+}
+
+
+/* Css dos itens com o risco vermelho */
+
+.traditional-single:nth-of-type(1) .risk{
+    width: 100px;
+    left: 62px;
+}
+.traditional-single:nth-of-type(2) .risk{
+    width: 120px;
+    left: 55px;
+}
+.traditional-single:nth-of-type(3) .risk{
+    width: 190px;
+    left: 20px;
+}
+.traditional-single:nth-of-type(4) .risk{
+    width: 180px;
+    left: 20px;
+}
+.traditional-single:nth-of-type(5) .risk{
+    width: 150px;
+    left: 40px;
+}
+.traditional-single:nth-of-type(6) .risk{
+    width: 120px;
+    left: 55px;
+}
+
+/* Segunda parte da section */
+
+.diferences .invisa{
+    width: 50%;
+    padding: 15px 2%;
+}
+
+.invisa div > img{
+    width: 169px;
+    height: 49px;
+    margin: 40px 10px 0 25px;
+}
+
+.invisa-single{
+    padding: 10px 0;
+    margin-top: 7px;
+}
+
+.invisa-single p{
+    padding: 10px 0;
+    text-align: center;
+    color: #18d4c5;
+}
+
+.invisa-single > p > b{
+    color: #18a89f;
+}
+
+/* Section contact */
+
+section.contact{
+    width: 100%;
+    margin-top: 40px;
+    background-color: #98FCDE;
+    padding-bottom: 50px;
+}
+
+.contact .container{
+    max-width: 600px;
+}
+
+.contact h2{
+    font-size: 24px;
+    padding-top: 70px;
+    color: #509d87;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .input{
+    padding-top: 30px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact input[type=text],input[type=email],input[type=tel]{
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    outline: none;
+    display: inline-block;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    line-height: 50px;
+}
+
+.contact 
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=tel]::placeholder{
+    color: #ccc;
+}
+
+.contact textarea{
+    width: 100%;
+    max-width: 400px;
+    height: 140px;
+    outline: none;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 17px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.contact textarea::placeholder{
+    color: #ccc;
+}
+
+.contact input[type=submit]{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    background-color: #18a89f;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 15px;
+    margin: 20px 0;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    min-height: 130px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6cc5b2;
+}
+
+footer .footer-img{
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+footer .footer-p{
+    width: 50%;
+    color: #509d87;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 40px;
+}
+
+.footer-p p{
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------*/
+
+
+/* Media querys */
+
+@media screen and (max-width: 950px){
+
+    /* header */
+
+    .desktop{
+        display: none;
+    }
+
+    .telefone-header{
+        display: none;
+    }
+
+    /* content */
+
+    .content-home >.container{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .description p{
+        max-width: 470px;
+    }
+    
+    .images-home{
+        display: none;
+    }
+
+    /* good points */
+
+    .good-points > .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .good-points .point-single{
+        width: 100%;
+        text-align: center;
+        max-width: 400px;
+    }
+
+    /* procedure  */
+
+    section.procedure{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .procedure .image-procedure{
+        width: 700px;
+        height: 400px;
+        background-size: 800px;
+        background-position: top right;
+    }
+
+    .procedure .about-procedure{
+        width: 100%;
+        margin: 50px 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    /* invisalign */
+
+    section.invisalign{
+        position: relative;
+        top: 0px;
+    }
+
+    /* serves */
+    
+    section.serves{
+        margin-top: 20px;
+    }
+
+    .works .works-one{
+        display: none; 
+    }
+
+    .works-two .single-work{
+        display: flex;
+        justify-content: center;
+        justify-content: center; 
+    }
+
+
+    .works .works-two{
+        width: 100%;
+    }
+
+    /* footer */
+    
+    footer{
+        flex-direction: column;
+    }
+    
+    footer .footer-img{
+        width: 100%;
+    }
+    
+    footer .footer-p{
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+
+    /* Fazendo o nav mobile */
+
+    nav.mobile{
+        display: block;
+        float: right; 
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+
+    nav.mobile > i{
+        color: white;
+        font-size: 25px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    nav.mobile ul{
+        display: none;
+        width: 100%;
+        max-height: 400px;
+        background-color: #6cc5b2;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        list-style-type: none;
+        z-index: 999;
+    }
+
+
+    nav.mobile li{
+        width: 100%;
+        display: inline-block;
+        padding: 20px;
+        border-bottom: 2px solid whitesmoke;
+        text-align: center;
+    }
+
+    nav.mobile a{
+        text-decoration: none;
+        font-size: 18px;
+        color: whitesmoke;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .description form input[type=email]{
+        margin-left: 5px;
+    }
+
+    .description form input[type=submit]{
+       margin-top: 10px;
+    }
+
+    /* ----------------------------------- */
+
+    .procedure .image-procedure{
+        width: 500px;
+        height: 300px;
+        background-size: 600px;
+        background-position: top right;
+    }
+
+    /* ------------------------------------- */
+
+    .single-work .circle{
+        display: none;
+    }
+
+    .info span{
+        display: inline-block;
+    }
+    
+    /* ------------------------------------- */
+
+    .diferences .flex{
+        flex-direction: column;
+    }
+
+    .diferences .traditional{
+        width: 100%;
+        border: none;
+    }
+
+    .diferences .invisa{
+        width: 100%;
+    }
+
+    .traditional-single{
+       max-width: 100%;
+       padding: 0 2%;
+    }
+
+    .traditional-single .risk{
+        display: inline-block;
+        position: relative;
+        top: -30px;
+    }
+
+    .traditional-single:nth-of-type(1) .risk{
+        width: 100px;
+        left: 3px;
+    }
+    .traditional-single:nth-of-type(2) .risk{
+        width: 120px;
+        left: 3px;
+    }
+    .traditional-single:nth-of-type(3) .risk{
+        width: 190px;
+        left: 6px;
+    }
+    .traditional-single:nth-of-type(4) .risk{
+        width: 180px;
+        left: 6px;
+    }
+    .traditional-single:nth-of-type(5) .risk{
+        width: 150px;
+        left: 6px;
+    }
+    .traditional-single:nth-of-type(6) .risk{
+        width: 120px;
+        left: 7px;
+    }
+
+    .invisa div{
+        text-align: center;
+        margin: 0 auto;
+
+    }
+
+    .invisa div > img{
+        width: 169px;
+        height: 49px;
+        margin: 40px auto 10px auto;
+    }
+
+    /* ---------------------------------- */
+
+    .contact input[type=submit]{
+        font-size: 13px;
+    }
+
+}
